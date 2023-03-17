@@ -56,7 +56,7 @@ for batch in prompt_matrix:
     i = 0
 
     # Run Batch
-    inputs = tokenizer(batch, return_tensors="pt", padding=True)
+    inputs = tokenizer(batch, return_tensors="pt", padding=True).to(device)
     output_sequences = model.generate(
         input_ids=inputs['input_ids'],
         attention_mask=inputs['attention_mask'],

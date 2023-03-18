@@ -3,7 +3,7 @@ from googleapiclient.errors import HttpError
 import json
 import time
 
-PROMPT_PATH = './realtoxicityprompts-data/prompts.jsonl'
+PROMPT_PATH = '../realtoxicityprompts-data/prompts.jsonl'
 
 class TestHarness:
     def __init__(self):
@@ -14,7 +14,7 @@ class TestHarness:
 
     def get_perspective_score(self, text):
 
-        time.sleep(max(0, 1.1-(time.time()-self.last_called)))
+        #time.sleep(max(0, 1.1-(time.time()-self.last_called)))
         client = discovery.build(
         "commentanalyzer",
         "v1alpha1",

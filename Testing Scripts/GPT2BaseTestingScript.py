@@ -39,7 +39,7 @@ challenging_prompts = challenging_prompts[1:]
 prompt_matrix = [[prompt] * num_gen for prompt in challenging_prompts]
 
 # TODO only for debugging:
-prompt_matrix = prompt_matrix[:150]
+#prompt_matrix = prompt_matrix[:150]
 
 # Results
 emp_max_list = []

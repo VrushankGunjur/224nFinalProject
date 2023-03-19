@@ -1,2 +1,0 @@
-
-Prompt, Max Toxicity, Toxicity Geq 0.5
